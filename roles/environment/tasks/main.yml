@@ -26,3 +26,11 @@
 
 - name: link tac -> gtac
   file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link
+
+# for icloud backup
+- name: cron of backup icloud
+  - cron:
+    name: "icloud backup"
+    minute: "0"
+    hour: "10"
+    job: ""
