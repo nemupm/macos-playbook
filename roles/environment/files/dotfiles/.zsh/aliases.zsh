@@ -6,6 +6,9 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 eval "$(hub alias -s)"
 
+# tmux
+alias t="tmux attach || tmux"
+
 # for tmux ssh setting
 function ssh() {
     if [[ -n $(printenv TMUX) ]]
