@@ -1,0 +1,19 @@
+- hosts: localhost
+  connection: local
+  vars_prompt:
+    - name: "role_homebrew_packages"
+      prompt: "install homebrew_packages?(yes/no)"
+      private: no
+      default: "no"
+    - name: "role_homebrew_cask_packages"
+      prompt: "install homebrew_cask_packages?(yes/no)"
+      private: no
+      default: "no"
+    - name: "role_environment"
+      prompt: "update environment?(yes/no)"
+      private: no
+      default: "no"
+  roles:
+    - { role: homebrew_packages, when: role_homebrew_packages == "yes" }
+    - { role: homebrew_cask_packages, when: role_homebrew_cask_packages == "yes" }
+    - { role: environment, when: role_environment == "yes" }

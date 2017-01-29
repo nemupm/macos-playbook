@@ -1,0 +1,25 @@
+# dotfiles
+- name: copy dotfiles
+  copy: src=dotfiles/ dest=~/
+
+# change shell to zsh
+- name: check /etc/shells
+  shell: cat /etc/shells|grep /usr/local/bin/zsh
+  register: zsh_exist
+  changed_when: false
+  check_mode: no
+
+- name: add zsh to /etc/shells
+  shell: echo "/usr/local/bin/zsh\n" >> /etc/shells
+  when: zsh_exist.stdout_lines.count == 0
+  become: yes
+
+- name: check current shell
+  shell: echo $SHELL
+  register: current_shell
+  changed_when: false
+  check_mode: no
+
+- name: change login shell to zsh
+  shell: chsh -s /usr/local/bin/zsh
+  when: current_shell.stdout != "/usr/local/bin/zsh"

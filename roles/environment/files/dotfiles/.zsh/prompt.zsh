@@ -1,0 +1,3 @@
+# prompt
+PROMPT='%n@%m:%~
+$ '

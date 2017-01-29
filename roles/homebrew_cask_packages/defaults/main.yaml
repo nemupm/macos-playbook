@@ -1,0 +1,26 @@
+homebrew_cask_packages:
+  - { name: iterm2 }
+  - { name: firefox }
+  - { name: google-chrome }
+  - { name: adobe-reader }
+  - { name: cooviewer }
+  - { name: flux }
+  - { name: java }
+  - { name: skype }
+  - { name: chatwork }
+  - { name: karabiner }
+  - { name: cmd-eikana }
+  - { name: dash }
+  - { name: webstorm }
+  - { name: phpstorm }
+  - { name: intellij-idea }
+  - { name: android-studio }
+  - { name: sublime-text }
+  - { name: gimp }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: appcleaner }
+  - { name: dropbox }
+  - { name: unity }
+  - { name: boostnote }
+  - { name: bartender }

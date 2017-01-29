@@ -1,0 +1,9 @@
+[color]
+    ui = auto
+
+[user]
+    name  = nemupm
+    email = nemupm@gmail.com
+
+[ghq]
+    root = ~/Documents/src
