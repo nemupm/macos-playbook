@@ -1,4 +1,7 @@
 #!/bin/bash
-/usr/bin/rsync -a $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/ $HOME/Documents/resource/icloud/backup --exclude ".git"
+PATH=/usr/local/bin:/usr/bin:/bin
+
+mkdir -p $HOME/Documents/resource/icloud/
+rsync -a $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/ $HOME/Documents/resource/icloud/backup --exclude ".git"
 cd $HOME/Documents/resource/icloud/backup
-/usr/local/bin/git add -A && /usr/local/bin/git commit -m "update"
+git init && git add -A && git commit -m "update"
