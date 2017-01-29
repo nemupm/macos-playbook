@@ -23,3 +23,6 @@
 - name: change login shell to zsh
   shell: chsh -s /usr/local/bin/zsh
   when: current_shell.stdout != "/usr/local/bin/zsh"
+
+- name: link tac -> gtac
+  file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link
