@@ -31,6 +31,16 @@
 - name: link tac -> gtac
   file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link
 
+# gitignore
+- name: set gitignores
+  git:
+    repo: https://github.com/github/gitignore.git
+    dest: ~/.gitignores
+- name: concat gitignore files into one file
+  assemble:
+    src: ~/.gitignores/Global
+    dest: ~/.gitignore_global
+
 # for icloud backup
 - name: cron of backup icloud
   cron:

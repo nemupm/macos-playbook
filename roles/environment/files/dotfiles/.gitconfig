@@ -7,3 +7,6 @@
 
 [ghq]
     root = ~/Documents/src
+
+[core]
+    excludesfile = ~/.gitignore_global

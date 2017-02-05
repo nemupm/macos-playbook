@@ -6,6 +6,9 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 eval "$(hub alias -s)"
 
+# gitignore
+function gi() { curl -L -s https://www.gitignore.io/api/"$@" ;}
+
 # tmux
 alias t="tmux attach || tmux"
 
