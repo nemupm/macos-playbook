@@ -1,0 +1,11 @@
+# java environment manager(jdk, gradle,...)
+- name: check whether sdkman! installed
+  stat: path=~/.sdkman
+  register: sdkman_dir
+
+- name: install sdkman!(java environment manager)
+  shell: curl -s "https://get.sdkman.io" | bash
+  when: not sdkman_dir.stat.exists
+
+- name: install gradle
+  shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install gradle
