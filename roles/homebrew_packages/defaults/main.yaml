@@ -33,3 +33,4 @@ homebrew_packages:
   - { name: tmux }
   - { name: source-highlight }
   - { name: reattach-to-user-namespace }
+  - { name: mono }
