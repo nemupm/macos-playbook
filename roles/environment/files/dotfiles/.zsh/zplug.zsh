@@ -16,6 +16,8 @@ zplug "junegunn/fzf-bin", \
     from:gh-r
 # enhancd
 zplug "b4b4r07/enhancd", use:init.sh
+# vagrant global-status/box controller
+zplug 'gongo/pecrant', as:command
 # peco
 zplug "peco/peco", \
     as:command, \
