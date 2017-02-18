@@ -9,3 +9,7 @@
 
 - name: install gradle
   shell: source ~/.sdkman/bin/sdkman-init.sh && sdk install gradle
+
+# node version manager
+- name: install and update nvm
+  shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
