@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: graphviz }
   - { name: gibo }
   - { name: tmux }
+  - { name: clipper }
   - { name: source-highlight }
   - { name: reattach-to-user-namespace }
   - { name: mono }
