@@ -1,10 +1,9 @@
 # PATH
 export PATH=/usr/local/bin:$PATH
+
 # encode
 export LANG=ja_JP.UTF-8
 
-# java
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 
@@ -12,6 +11,9 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
+
+# java
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # sdkman!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -24,3 +26,11 @@ export NVM_DIR="$HOME/.nvm"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# pyenv-virtualenv
+eval "$(pyenv virtualenv-init -)"

@@ -13,3 +13,25 @@
 # node version manager
 - name: install and update nvm
   shell: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+# python version manager
+- name: check whether pyenv installed
+  stat:
+    path: ~/.pyenv
+  register: stat_result
+- name: install pyenv
+  git:
+    repo: https://github.com/yyuu/pyenv.git
+    dest: ~/.pyenv
+  when: stat_result.stat.exists == False
+
+# python virtual environment manager
+- name: check whether pyenv installed
+  stat:
+    path: ~/.pyenv/plugins/pyenv-virtualenv
+  register: stat_result
+- name: install pyenv-virtualenv
+  git:
+    repo: https://github.com/yyuu/pyenv-virtualenv.git
+    dest: ~/.pyenv/plugins/pyenv-virtualenv
+  when: stat_result.stat.exists == False
