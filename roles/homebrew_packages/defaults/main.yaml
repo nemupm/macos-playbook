@@ -19,7 +19,6 @@ homebrew_packages:
   - { name: ghq }
   - { name: rbenv }
   - { name: ruby-build }
-  - { name: rbenv-gem-rehash }
   - { name: lha }
   - { name: mysql }
   - { name: sqlite }
