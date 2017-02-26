@@ -13,6 +13,8 @@ homebrew_cask_packages:
   - { name: dash }
   - { name: webstorm }
   - { name: phpstorm }
+  - { name: rubymine }
+  - { name: clion }
   - { name: intellij-idea }
   - { name: android-studio }
   - { name: sublime-text }
