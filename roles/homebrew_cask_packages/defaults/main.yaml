@@ -27,3 +27,4 @@ homebrew_cask_packages:
   - { name: boostnote }
   - { name: bartender }
   - { name: insomniax }
+  - { name: michaelvillar-timer }
