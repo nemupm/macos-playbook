@@ -34,3 +34,7 @@ eval "$(pyenv init -)"
 
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
+
+# gvm
+unalias gvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
