@@ -3,7 +3,12 @@ alias subl='reattach-to-user-namespace subl'
 
 # git
 alias g='cd $(ghq root)/$(ghq list | peco)'
-alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+function gh(){
+    repo_dir=$(ghq list | peco)
+    github_host=$(echo ${repo_dir}| cut -d "/" -f 1)
+    repo=$(echo ${repo_dir}| cut -d "/" -f 2,3)
+    GITHUB_HOST=${github_host} hub browse ${repo}
+}
 eval "$(hub alias -s)"
 
 # gitignore
