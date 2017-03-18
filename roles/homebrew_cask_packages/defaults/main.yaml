@@ -18,6 +18,7 @@ homebrew_cask_packages:
   - { name: intellij-idea }
   - { name: android-studio }
   - { name: sublime-text }
+  - { name: atom }
   - { name: gimp }
   - { name: vagrant }
   - { name: virtualbox }
