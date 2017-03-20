@@ -46,7 +46,8 @@ function expand_path() {
     cur_dir=$(ls -U -d "$(pwd)"/* | head -n 100)
     parent_dir=$(ls -U -d "$(dirname $(pwd))"/* | head -n 100)
     ghq_dir=$(ghq list -p)
-    BUFFER=${LBUFFER}$(echo "${cur_dir}\n${parent_dir}\n${ghq_dir}"| peco)${RBUFFER}
+    ecd_dir=$(cat $ENHANCD_DIR/enhancd.log)
+    BUFFER=${LBUFFER}$(echo "${cur_dir}\n${parent_dir}\n${ghq_dir}\n${ecd_dir}"| peco)${RBUFFER}
 }
 zle -N expand_path
 bindkey "^x^p" expand_path
