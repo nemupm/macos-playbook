@@ -14,6 +14,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # java
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
