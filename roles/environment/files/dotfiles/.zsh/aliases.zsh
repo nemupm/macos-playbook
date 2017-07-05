@@ -2,19 +2,24 @@
 alias subl='reattach-to-user-namespace subl'
 
 # git
-function g(){
+function ghq::jump(){
     ghq_root=$(ghq root)
     repo=$(ghq list | peco)
     if [ -n "$repo" ]; then
         cd "$ghq_root/$repo"
     fi
 }
-function gh(){
+function ghq::browse(){
     repo_dir=$(ghq list | peco)
+    if [ -z "$repo_dir" ]; then
+        return 1;
+    fi
     github_host=$(echo ${repo_dir}| cut -d "/" -f 1)
     repo=$(echo ${repo_dir}| cut -d "/" -f 2,3)
     GITHUB_HOST=${github_host} hub browse ${repo}
 }
+alias g='ghq::jump'
+alias gh='ghq::browse'
 eval "$(hub alias -s)"
 
 # gitignore
