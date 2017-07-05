@@ -2,7 +2,13 @@
 alias subl='reattach-to-user-namespace subl'
 
 # git
-alias g='cd $(ghq root)/$(ghq list | peco)'
+function g(){
+    ghq_root=$(ghq root)
+    repo=$(ghq list | peco)
+    if [ -n "$repo" ]; then
+        cd "$ghq_root/$repo"
+    fi
+}
 function gh(){
     repo_dir=$(ghq list | peco)
     github_host=$(echo ${repo_dir}| cut -d "/" -f 1)
