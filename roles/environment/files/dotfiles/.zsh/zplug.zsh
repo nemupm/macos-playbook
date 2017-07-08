@@ -28,6 +28,8 @@ zplug "jimeh/zsh-peco-history"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
+# typora-notebook
+zplug "nemupm/typora-notebook", use:init.sh
 
 # install plugins
 if ! zplug check --verbose; then
