@@ -30,6 +30,10 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
 # typora-notebook
 zplug "nemupm/typora-notebook", use:init.sh
+# md2conflu
+zplug "nemupm/md2conflu", \
+    as:command, \
+    use:"exe/md2conflu"
 
 # install plugins
 if ! zplug check --verbose; then

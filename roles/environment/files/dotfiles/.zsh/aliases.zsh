@@ -63,3 +63,6 @@ function expand_path() {
 }
 zle -N expand_path
 bindkey "^x^p" expand_path
+
+# md2conflu
+alias m2c="pbpaste |md2conflu |pbcopy"
