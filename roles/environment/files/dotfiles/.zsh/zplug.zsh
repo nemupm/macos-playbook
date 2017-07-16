@@ -9,11 +9,6 @@ zplug 'dracula/zsh', as:theme
 zplug "plugins/git",   from:oh-my-zsh
 # Also prezto
 zplug "modules/prompt", from:prezto
-# fzf
-zplug "junegunn/fzf-bin", \
-    as:command, \
-    rename-to:"fzf", \
-    from:gh-r
 # enhancd
 zplug "b4b4r07/enhancd", use:init.sh
 # vagrant global-status/box controller
