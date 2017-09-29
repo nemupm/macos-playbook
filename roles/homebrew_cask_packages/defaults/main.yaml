@@ -23,6 +23,7 @@ homebrew_cask_packages:
   - { name: gimp }
   - { name: vagrant }
   - { name: virtualbox }
+  - { name: docker }
   - { name: appcleaner }
   - { name: dropbox }
   - { name: unity }

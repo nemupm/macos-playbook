@@ -35,6 +35,3 @@ homebrew_packages:
   - { name: source-highlight }
   - { name: reattach-to-user-namespace }
   - { name: mono }
-  - { name: docker }
-  - { name: docker-machine }
-  - { name: docker-compose }
