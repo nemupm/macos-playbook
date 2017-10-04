@@ -8,4 +8,4 @@ setopt auto_pushd
 setopt share_history
 
 # not add the same command as previous command to the histories
-setopt hist_ignore_dups
+setopt hist_ignore_all_dups
