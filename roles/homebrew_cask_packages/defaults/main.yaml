@@ -7,8 +7,10 @@ homebrew_cask_packages:
   - { name: flux }
   - { name: java }
   - { name: skype }
-  - { name: chatwork }
-  - { name: karabiner }
+  - { name: slack }
+  - { name: spark }
+  - { name: marp }
+  - { name: karabiner-elements }
   - { name: cmd-eikana }
   - { name: dash }
   - { name: webstorm }
@@ -16,6 +18,7 @@ homebrew_cask_packages:
   - { name: rubymine }
   - { name: pycharm }
   - { name: clion }
+  - { name: rider }
   - { name: intellij-idea }
   - { name: android-studio }
   - { name: sublime-text }
@@ -29,6 +32,7 @@ homebrew_cask_packages:
   - { name: unity }
   - { name: boostnote }
   - { name: typora }
+  - { name: postman }
   - { name: bartender }
   - { name: insomniax }
   - { name: michaelvillar-timer }
