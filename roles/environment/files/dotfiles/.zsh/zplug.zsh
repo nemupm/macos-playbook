@@ -29,6 +29,8 @@ zplug "nemupm/typora-notebook", use:init.sh
 zplug "nemupm/md2conflu", \
     as:command, \
     use:"exe/md2conflu"
+# ecs-deploy
+zplug "silinternational/ecs-deploy", as:command
 
 # install plugins
 if ! zplug check --verbose; then
