@@ -24,7 +24,8 @@ homebrew_cask_packages:
   - { name: android-studio }
   - { name: sublime-text }
   - { name: atom }
-  - { name: zotero }
+  - { name: mendeley }
+  - { name: xquartz }
   - { name: gimp }
   - { name: vagrant }
   - { name: virtualbox }

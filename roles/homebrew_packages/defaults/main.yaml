@@ -35,3 +35,4 @@ homebrew_packages:
   - { name: source-highlight }
   - { name: reattach-to-user-namespace }
   - { name: mono }
+  - { name: octave }
