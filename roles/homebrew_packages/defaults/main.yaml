@@ -5,7 +5,6 @@ homebrew_packages:
   - { name: coreutils }
   - { name: git }
   - { name: zsh }
-  - { name: zplug }
   - { name: wget }
   - { name: curl }
   - { name: pkg-config }

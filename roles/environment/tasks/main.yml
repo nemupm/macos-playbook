@@ -6,6 +6,12 @@
 - name: copy Documents
   copy: src=Documents/ dest=~/Documents/
 
+# install zplug
+- name: install zplug
+  git:
+    repo: https://github.com/zplug/zplug.git
+    dest: /usr/local/opt/zplug
+
 # change shell to zsh
 - name: check /etc/shells
   shell: cat /etc/shells |grep /usr/local/bin/zsh |wc -l |tr -d ' '
