@@ -1,0 +1,10 @@
+# This sshrc config works on the server where tmux, zsh and git are available.
+
+# export MY_HOME=$SSH_HOME ## Use this instead if no trash is allowed on home directory.
+export MY_HOME=$HOME/.nemupm
+mkdir -p $MY_HOME
+
+# zsh
+export SHELL=`which zsh`
+export ZDOTDIR=$SSHHOME/.sshrc.d
+exec zsh

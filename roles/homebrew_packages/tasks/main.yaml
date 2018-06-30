@@ -8,3 +8,9 @@
       else item.install_options
     }}
   with_items: "{{ homebrew_packages }}"
+
+- name: make tar command use gnu-tar for sshrc
+  file:
+    src: /usr/local/bin/gtar
+    dest: /usr/local/bin/tar
+    state: link

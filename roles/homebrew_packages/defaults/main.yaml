@@ -35,3 +35,5 @@ homebrew_packages:
   - { name: reattach-to-user-namespace }
   - { name: mono }
   - { name: octave }
+  - { name: sshrc }
+  - { name: gnu-tar }
