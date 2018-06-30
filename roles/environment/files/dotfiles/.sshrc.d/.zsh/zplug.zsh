@@ -15,6 +15,7 @@ zplug "plugins/git",   from:oh-my-zsh
 # Also prezto
 zplug "modules/prompt", from:prezto
 # enhancd
+export ENHANCD_DIR=$MY_HOME/.enhancd
 zplug "b4b4r07/enhancd", use:init.sh
 # peco
 zplug "peco/peco", \
