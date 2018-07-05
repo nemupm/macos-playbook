@@ -34,6 +34,10 @@
     repo: https://github.com/yyuu/pyenv-virtualenv.git
     dest: ~/.pyenv/plugins/pyenv-virtualenv
 
+# php version switcher
+- name: download php manager
+  homebrew: name=brew-php-switcher
+
 # golang version manager
 - name: check whether gvm installed
   stat:
