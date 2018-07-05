@@ -38,6 +38,12 @@
 - name: download php manager
   homebrew: name=brew-php-switcher
 
+# php package manager
+- name: download php installer
+  get_url: url=http://getcomposer.org/installer dest=/tmp/php-installer.php
+- name: exec php installer
+  shell: php /tmp/php-installer.php --install-dir $HOME/.bin
+
 # golang version manager
 - name: check whether gvm installed
   stat:

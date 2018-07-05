@@ -6,6 +6,10 @@
 - name: copy Documents
   copy: src=Documents/ dest=~/Documents/
 
+# make directory
+- name: make user's private bin directory
+  file: path=$HOME/.bin state=directory
+
 # install zplug
 - name: install zplug
   git:
