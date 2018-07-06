@@ -37,6 +37,7 @@ homebrew_cask_packages:
   - { name: boostnote }
   - { name: typora }
   - { name: postman }
+  - { name: sequel-pro }
   - { name: bartender }
   - { name: insomniax }
   - { name: michaelvillar-timer }
