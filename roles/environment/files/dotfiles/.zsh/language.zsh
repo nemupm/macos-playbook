@@ -27,7 +27,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # gvm
 print " Load gvm"
-unalias gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # direnv
