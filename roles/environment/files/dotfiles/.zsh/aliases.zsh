@@ -25,15 +25,6 @@ eval "$(hub alias -s)"
 # gitignore
 function gi() { curl -L -s https://www.gitignore.io/api/"$@" ;}
 
-# jetbrains
-alias idea='open -a /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea'
-alias webstorm='open -a /Applications/WebStorm.app/Contents/MacOS/webstorm'
-alias phpstorm='open -a /Applications/PhpStorm.app/Contents/MacOS/phpstorm'
-alias rubymine='open -a /Applications/RubyMine.app/Contents/MacOS/rubymine'
-alias pycharm='open -a /Applications/PyCharm.app/Contents/MacOS/pycharm'
-alias clion='open -a /Applications/CLion.app/Contents/MacOS/clion'
-alias rider='open -a /Applications/Rider\ EAP.app/Contents/MacOS/rider'
-
 # tmux
 alias t="tmux attach || tmux"
 
