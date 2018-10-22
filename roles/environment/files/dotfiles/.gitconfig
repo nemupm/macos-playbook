@@ -2,8 +2,7 @@
     ui = auto
 
 [user]
-    name  = nemupm
-    email = nemupm@gmail.com
+    useConfigOnly = true
 
 [ghq]
     root = ~/Documents/src
