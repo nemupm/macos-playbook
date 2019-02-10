@@ -34,3 +34,5 @@ homebrew_cask_packages:
   - { name: bartender }
   - { name: insomniax }
   - { name: michaelvillar-timer }
+  - { name: amazon-workspaces }
+  - { name: yt-music }
