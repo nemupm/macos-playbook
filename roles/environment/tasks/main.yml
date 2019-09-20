@@ -51,11 +51,3 @@
     src: ~/.gitignores/Global
     dest: ~/.gitignore_global
     regexp: 'Ansible|Dropbox|JetBrains|SublimeText|macOS'
-
-# for icloud backup
-- name: cron of backup icloud
-  cron:
-    name: "icloud backup"
-    minute: "0"
-    hour: "10"
-    job: "bash $HOME/Documents/script/backup_icloud.sh"
