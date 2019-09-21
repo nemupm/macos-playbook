@@ -26,7 +26,6 @@ homebrew_packages:
   - { name: mercurial }
   - { name: socat }
   - { name: rlwrap }
-  - { name: phantomjs }
   - { name: graphviz }
   - { name: gibo }
   - { name: tmux }

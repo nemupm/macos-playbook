@@ -2,14 +2,13 @@ homebrew_cask_packages:
   - { name: iterm2 }
   - { name: firefox }
   - { name: google-chrome }
-  - { name: adobe-reader }
-  - { name: cooviewer }
+  - { name: adobe-acrobat-reader }
+  - { name: yacreader }
   - { name: flux }
   - { name: java }
   - { name: slack }
   - { name: discord }
   - { name: spark }
-  - { name: marp }
   - { name: karabiner-elements }
   - { name: dash }
   - { name: jetbrains-toolbox }
@@ -25,7 +24,7 @@ homebrew_cask_packages:
   - { name: postman }
   - { name: sequel-pro }
   - { name: bartender }
-  - { name: insomniax }
+  - { name: insomnia }
   - { name: michaelvillar-timer }
   - { name: amazon-workspaces }
   - { name: yt-music }
