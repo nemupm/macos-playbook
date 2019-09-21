@@ -6,17 +6,14 @@ homebrew_cask_packages:
   - { name: cooviewer }
   - { name: flux }
   - { name: java }
-  - { name: skype }
   - { name: slack }
+  - { name: discord }
   - { name: spark }
   - { name: marp }
   - { name: karabiner-elements }
-  - { name: cmd-eikana }
   - { name: dash }
   - { name: jetbrains-toolbox }
-  - { name: android-studio }
   - { name: sublime-text }
-  - { name: atom }
   - { name: mendeley }
   - { name: xquartz }
   - { name: gimp }
@@ -25,10 +22,6 @@ homebrew_cask_packages:
   - { name: docker }
   - { name: appcleaner }
   - { name: dropbox }
-  - { name: unity }
-  - { name: epic-games }
-  - { name: boostnote }
-  - { name: typora }
   - { name: postman }
   - { name: sequel-pro }
   - { name: bartender }
