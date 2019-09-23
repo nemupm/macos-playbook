@@ -36,3 +36,5 @@ homebrew_packages:
   - { name: octave }
   - { name: sshrc }
   - { name: gnu-tar }
+  - { name: awscli }
+  - { name: terraform }
