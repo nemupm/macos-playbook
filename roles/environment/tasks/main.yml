@@ -1,6 +1,10 @@
 # put dotfiles
 - name: copy dotfiles
-  copy: src=dotfiles/ dest=~/
+  synchronize:
+    src: dotfiles/
+    dest: ~/
+    rsync_opts:
+      - "--exclude=.git"
 
 # make directory
 - name: make user's private bin directory
