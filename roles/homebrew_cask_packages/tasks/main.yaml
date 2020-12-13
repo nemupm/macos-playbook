@@ -1,5 +1,5 @@
 - name: brew cask install packages
-  homebrew_cask:
+  community.general.homebrew_cask:
     name: "{{ item.name }}"
     state: "{{ item.state|default('installed') }}"
     accept_external_apps: yes

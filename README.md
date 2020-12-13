@@ -6,8 +6,14 @@
 git clone --recursive git@github.com:nemupm/macos-playbook.git
 ```
 
+## setup
+
+```
+ansible-galaxy collection install community.general
+```
+
 ## run
 
 ```
-HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook macos.yml -K
+ansible-playbook macos.yml -K
 ```
