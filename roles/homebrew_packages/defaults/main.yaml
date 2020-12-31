@@ -39,3 +39,4 @@ homebrew_packages:
   - { name: terraform }
   - { name: gawk }
   - { name: java }
+  - { name: svn }
