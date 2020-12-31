@@ -38,3 +38,4 @@ homebrew_packages:
   - { name: awscli }
   - { name: terraform }
   - { name: gawk }
+  - { name: java }
