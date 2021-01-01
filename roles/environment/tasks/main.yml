@@ -10,12 +10,6 @@
 - name: make user's private bin directory
   file: path=$HOME/.bin state=directory
 
-# install zplug
-- name: install zplug
-  git:
-    repo: https://github.com/zplug/zplug.git
-    dest: /usr/local/opt/zplug
-
 # change shell to zsh
 - name: check /etc/shells
   shell: cat /etc/shells |grep /usr/local/bin/zsh |wc -l |tr -d ' '
