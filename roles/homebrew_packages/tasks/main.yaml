@@ -9,8 +9,10 @@
     }}
   with_items: "{{ homebrew_packages }}"
 
-- name: make tar command use gnu-tar for sshrc
+- name: symbolic link for java
   file:
-    src: /usr/local/bin/gtar
-    dest: /usr/local/bin/tar
-    state: link
+    src=/usr/local/opt/openjdk/libexec/openjdk.jdk
+    path=/Library/Java/JavaVirtualMachines/openjdk.jdk
+    state=link
+    force=yes
+  become: yes
