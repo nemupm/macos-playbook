@@ -10,30 +10,31 @@
 - name: make user's private bin directory
   file: path=$HOME/.bin state=directory
 
-# change shell to zsh
-- name: check /etc/shells
-  shell: cat /etc/shells |grep /usr/local/bin/zsh |wc -l |tr -d ' '
-  register: zsh_exist
-  changed_when: false
-  check_mode: no
-
-- name: add zsh to /etc/shells
-  shell: echo "/usr/local/bin/zsh\n" >> /etc/shells
-  when: zsh_exist.stdout == '0'
-  become: yes
-
-- name: check current shell
-  shell: echo $SHELL
-  register: current_shell
-  changed_when: false
-  check_mode: no
-
-- name: change login shell to zsh
-  shell: chsh -s /usr/local/bin/zsh
-  when: current_shell.stdout != "/usr/local/bin/zsh"
-
-- name: link tac -> gtac
-  file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link
+## TODO: Fix for Apple Silicon
+## change shell to zsh
+#- name: check /etc/shells
+#  shell: cat /etc/shells |grep /usr/local/bin/zsh |wc -l |tr -d ' '
+#  register: zsh_exist
+#  changed_when: false
+#  check_mode: no
+#
+#- name: add zsh to /etc/shells
+#  shell: echo "/usr/local/bin/zsh\n" >> /etc/shells
+#  when: zsh_exist.stdout == '0'
+#  become: yes
+#
+#- name: check current shell
+#  shell: echo $SHELL
+#  register: current_shell
+#  changed_when: false
+#  check_mode: no
+#
+#- name: change login shell to zsh
+#  shell: chsh -s /usr/local/bin/zsh
+#  when: current_shell.stdout != "/usr/local/bin/zsh"
+#
+#- name: link tac -> gtac
+#  file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link
 
 # gitignore
 - name: set gitignores
