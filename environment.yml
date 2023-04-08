@@ -1,0 +1,4 @@
+- name: place dotfiles
+  hosts: localhost
+  roles:
+    - environment

@@ -1,6 +1,0 @@
-- name: tapping repositories to homebrew
-  homebrew_tap: name="{{ item }}" state=present
-  with_items: "{{ homebrew_taps }}"
-
-- name: update homebrew
-  homebrew: update_homebrew=yes

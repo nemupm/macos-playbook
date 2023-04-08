@@ -1,23 +1,26 @@
-homebrew_cask_packages:
+homebrew_cask_packages_common:
   - { name: iterm2 }
   - { name: firefox }
-  - { name: yacreader }
   - { name: flux }
   - { name: slack }
-  - { name: discord }
   - { name: karabiner-elements }
-  - { name: dash }
   - { name: jetbrains-toolbox }
   - { name: sublime-text }
-  - { name: xquartz }
   - { name: gimp }
-  - { name: vagrant }
   - { name: docker }
   - { name: appcleaner }
-  - { name: dropbox }
   - { name: postman }
   - { name: sequel-pro }
-  - { name: michaelvillar-timer }
-  - { name: amazon-workspaces }
   - { name: google-japanese-ime }
   - { name: clipy }
+  - { name: raycast }
+  - { name: visual-studio-code }
+  - { name: zoom }
+  - { name: google-cloud-sdk }
+
+homebrew_cask_packages_private:
+  - { name: yacreader }
+  - { name: discord }
+  - { name: vagrant }
+  - { name: dropbox }
+  - { name: amazon-workspaces }
