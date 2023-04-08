@@ -1,3 +1,3 @@
 [submodule "roles/environment/files/dotfiles"]
 	path = roles/environment/files/dotfiles
-	url = git@github.com:nemupm/dotfiles.git
+	url = https://github.com/nemupm/dotfiles.git

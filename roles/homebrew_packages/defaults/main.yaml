@@ -13,11 +13,8 @@ homebrew_packages:
   - { name: nkf }
   - { name: jq }
   - { name: direnv }
-  - { name: hub }
   - { name: tig }
   - { name: ghq }
-  - { name: rbenv }
-  - { name: ruby-build }
   - { name: lha }
   - { name: mysql }
   - { name: sqlite }
@@ -33,10 +30,23 @@ homebrew_packages:
   - { name: source-highlight }
   - { name: reattach-to-user-namespace }
   - { name: mono }
-  - { name: octave }
   - { name: gnu-tar }
   - { name: awscli }
-  - { name: terraform }
   - { name: gawk }
-  - { name: java }
   - { name: svn }
+  - { name: hugo }
+  - { name: gpg }
+  - { name: asdf }
+# ruby https://github.com/asdf-vm/asdf-ruby
+  - { name: ruby-build }
+  - { name: libyaml }
+  - { name: gmp }
+# python https://github.com/asdf-community/asdf-python
+  - { name: sqlite3 }
+  - { name: xz }
+  - { name: zlib }
+  - { name: tcl-tk }
+# nodejs https://github.com/asdf-vm/asdf-nodejs
+  - { name: node-build }
+
+
