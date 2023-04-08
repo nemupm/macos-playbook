@@ -1,0 +1,4 @@
+- name: install homebrew cask packages
+  hosts: localhost
+  roles:
+    - homebrew_cask_packages

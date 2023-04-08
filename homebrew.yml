@@ -1,0 +1,4 @@
+- name: install homebrew packages
+  hosts: localhost
+  roles:
+    - homebrew_packages

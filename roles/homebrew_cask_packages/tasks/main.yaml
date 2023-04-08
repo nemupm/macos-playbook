@@ -1,6 +1,14 @@
 - name: brew cask install packages
   community.general.homebrew_cask:
     name: "{{ item.name }}"
-    state: "{{ item.state|default('installed') }}"
+    state: "{{ 'installed' if not latest else 'latest' }}"
     accept_external_apps: yes
-  with_items: "{{ homebrew_cask_packages }}"
+  with_items: "{{ homebrew_cask_packages_common }}"
+
+- name: brew cask install private packages
+  community.general.homebrew_cask:
+    name: "{{ item.name }}"
+    state: "{{ 'installed' if not latest else 'latest' }}"
+    accept_external_apps: yes
+  with_items: "{{ homebrew_cask_packages_private }}"
+  when: include_private

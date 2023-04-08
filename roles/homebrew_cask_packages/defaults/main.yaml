@@ -24,6 +24,3 @@ homebrew_cask_packages_private:
   - { name: vagrant }
   - { name: dropbox }
   - { name: amazon-workspaces }
-
-homebrew_cask_packages_work:
-  - { name: google-drive }
