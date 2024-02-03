@@ -3,7 +3,6 @@ homebrew_cask_packages_common:
   - { name: firefox }
   - { name: flux }
   - { name: slack }
-  - { name: karabiner-elements }
   - { name: jetbrains-toolbox }
   - { name: sublime-text }
   - { name: gimp }
@@ -12,8 +11,6 @@ homebrew_cask_packages_common:
   - { name: postman }
   - { name: sequel-pro }
   - { name: google-japanese-ime }
-  - { name: clipy }
-  - { name: raycast }
   - { name: visual-studio-code }
   - { name: zoom }
   - { name: google-cloud-sdk }
@@ -24,3 +21,5 @@ homebrew_cask_packages_private:
   - { name: vagrant }
   - { name: dropbox }
   - { name: amazon-workspaces }
+  - { name: raycast }
+  - { name: clipy }
