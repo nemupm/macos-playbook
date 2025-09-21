@@ -15,9 +15,7 @@ homebrew_packages:
   - { name: direnv }
   - { name: tig }
   - { name: ghq }
-  - { name: lha }
   - { name: mysql }
-  - { name: sqlite }
   - { name: redis }
   - { name: imagemagick }
   - { name: mercurial }
@@ -42,7 +40,6 @@ homebrew_packages:
   - { name: libyaml }
   - { name: gmp }
 # python https://github.com/asdf-community/asdf-python
-  - { name: sqlite3 }
   - { name: xz }
   - { name: zlib }
   - { name: tcl-tk }

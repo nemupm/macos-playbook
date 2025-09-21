@@ -1,16 +1,12 @@
 homebrew_cask_packages_common:
   - { name: iterm2 }
   - { name: firefox }
-  - { name: flux }
   - { name: slack }
   - { name: jetbrains-toolbox }
   - { name: sublime-text }
   - { name: gimp }
-  - { name: docker }
-  - { name: appcleaner }
+  - { name: app-cleaner }
   - { name: postman }
-  - { name: sequel-pro }
-  - { name: google-japanese-ime }
   - { name: visual-studio-code }
   - { name: zoom }
   - { name: google-cloud-sdk }
@@ -22,4 +18,3 @@ homebrew_cask_packages_private:
   - { name: dropbox }
   - { name: amazon-workspaces }
   - { name: raycast }
-  - { name: clipy }
